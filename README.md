@@ -26,8 +26,8 @@ A simple retrieval-based chatbot built with Python and Jupyter Notebook. It matc
 ## Project files
 
 ```text
-Chatbot-Project/
-├── chatbot_project.ipynb
+Chatbot/
+├── Chatbot.ipynb
 ├── README.md
 ├── requirements.txt
 └── dialogs.txt                 # required dataset; include only if you can share it
@@ -72,7 +72,7 @@ This relative path works when the notebook is run from the project directory.
 1. Clone or download this repository.
 2. Open a terminal in the project directory and install the requirements.
 3. Ensure `dialogs.txt` is present in the project directory and its format matches the description above.
-4. Open `chatbot_project.ipynb` in Jupyter Notebook or JupyterLab.
+4. Open `Chatbot.ipynb` in Jupyter Notebook or JupyterLab.
 5. Run the notebook cells in order.
 6. Use the interactive chat cell to enter messages. Type `exit`, `quit`, or `bye` to stop the chat.
 
