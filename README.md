@@ -49,23 +49,29 @@ Install the dependencies with:
 pip install -r requirements.txt
 ```
 
+
 ## Dataset setup
 
-The notebook expects a tab-separated text file named `dialogs.txt` with two fields per line:
+This project uses `dialogs.txt`, a tab-separated conversational dataset. Each line contains two fields: a dialogue input and its corresponding response, separated by an actual tab character.
+
+Example format:
 
 ```text
-question<TAB>answer
+hi, how are you doing?    i'm fine. how about yourself?
+i'm fine. how about yourself?    i'm pretty good. thanks for asking.
 ```
 
-Place `dialogs.txt` in the same folder as the notebook. If the dataset is not yours to redistribute, do not upload it publicly; instead, document where it can be obtained and how to place it in the project folder.
+**Note:** The space between the two fields in the example above represents a tab character; the file itself should contain a tab, not a series of spaces.
 
-**Important:** Update the notebook's original machine-specific Windows path before sharing. For example, use:
+Place `dialogs.txt` in the same directory as the notebook. The notebook should load it using a relative path:
 
 ```python
 DATA_PATH = "dialogs.txt"
 ```
 
-This relative path works when the notebook is run from the project directory.
+Update any original machine-specific Windows path in the notebook before sharing. This relative path works when you run the notebook from the project directory.
+
+If you cannot redistribute the dataset publicly, do not upload it to a public repository. Instead, document where it can be obtained and how to place it in the project directory.
 
 ## Run the project
 
